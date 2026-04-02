@@ -21,7 +21,7 @@
 
 <body>
     <div class="container">
-        <h1 class="text-center mt-2 mb-4">Job openings at {company_name}}</h1>
+        <h1 class="text-center mt-2 mb-4">{{company_name}} Careers</h1>
         <img class="img-fluid" id="banner" src="{{url_for('static', filename='images/banner.jpeg')}}">
         <h2 class="text-center mt-2 mb-4"> About Markiga</h2>
         <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus fugit fugiat porro vel
@@ -29,7 +29,7 @@
             laudantium. Fugiat, vitae explicabo. Accusantium minima illum, quae nostrum laudantium animi qui neque
             possimus, id velit exercitationem! Placeat voluptatum distinctio repudiandae doloremque enim quas quam?
             Explicabo neque laudantium tempore vero fugiat rem inventore magni.</p>
-        <h2 class="text-center mt-2 mb-4"> Open positions</h2>
+        <h2 class="text-center mt-2 mb-4"> Job Openings</h2>
         <div>
             {% for job in jobs%}
             {% include 'jobitem.html' %}
